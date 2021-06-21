@@ -124,9 +124,10 @@ header h1 {
   padding: 25px 0px 0px 25px;
 }
 
-.😭 h1 {
+.😭 h2 {
   font-weight: 600;
   color: var(--dark-blue);
+  font-size: 20px;
 }
 
 #break::after {
