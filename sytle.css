@@ -1,0 +1,168 @@
+:root {
+  --cyan: hsl(180, 62%, 55%);
+  --red: hsl(0, 78%, 62%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background: var(--light-gray);
+  font-family: "Poppins", sans-serif;
+}
+
+#error {
+  display: grid;
+  place-content: center;
+}
+
+#block-t {
+  box-shadow: -1px 17px 35px 0px rgba(0, 0, 0, 0.1);
+  height: 210px;
+  width: 300px;
+  margin-bottom: 35px;
+  border-radius: 5px;
+  border-top: 4px solid var(--red);
+}
+
+#block-t p {
+  font-weight: 200;
+  font-size: 13px;
+  color: var(--dark-blue);
+}
+
+#block-b p {
+  font-weight: 200;
+  font-size: 13px;
+  color: var(--dark-blue);
+}
+
+#inline-l p {
+  font-weight: 200;
+  font-size: 13px;
+  color: var(--dark-blue);
+}
+
+#inline-r p {
+  font-weight: 200;
+  font-size: 13px;
+  color: var(--dark-blue);
+}
+
+#block-b {
+  box-shadow: -1px 17px 35px 0px rgba(0, 0, 0, 0.1);
+  height: 210px;
+  width: 300px;
+  border-radius: 5px;
+  border-top: 4px solid var(--orange);
+}
+
+#inline-l {
+  box-shadow: -1px 17px 35px 0px rgba(0, 0, 0, 0.1);
+  height: 210px;
+  width: 300px;
+  border-radius: 5px;
+  border-top: 4px solid var(--cyan);
+}
+
+#inline-r {
+  box-shadow: -1px 17px 35px 0px rgba(0, 0, 0, 0.1);
+  height: 210px;
+  width: 300px;
+  border-radius: 5px;
+  border-top: 4px solid var(--blue);
+}
+
+#inline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 400px;
+
+  position: relative;
+  bottom: 338px;
+}
+
+#block {
+  margin-left: 350px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+header span {
+  font-weight: 200;
+  font-size: 13px;
+  color: var(--dark-blue);
+}
+
+header h3 {
+  font-weight: 200;
+  color: var(--dark-blue);
+  font-size: 31px;
+}
+
+header h1 {
+  color: var(--dark-blue);
+}
+
+.😘 {
+  display: flex;
+  justify-content: flex-end;
+  margin: 25px 30px 0px 0px;
+}
+
+.😭 {
+  padding: 25px 0px 0px 25px;
+}
+
+.😭 h1 {
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+#break::after {
+  content: "\a";
+  white-space: pre;
+}
+
+@media screen and (max-width: 375px) {
+  #block {
+    margin-left: 0px;
+  }
+
+  #inline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 37px;
+  }
+
+  #inline-l {
+    margin-bottom: 40px;
+  }
+
+  #inline-r {
+    margin-bottom: 100px;
+  }
+
+  header h3 {
+    font-size: 26px;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  #break::after {
+    content: "";
+  }
+}
